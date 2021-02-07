@@ -2,6 +2,7 @@
 
 const listEl = document.querySelector(".list-container");
 const line = ['좌측', '중앙', '우측'];
+let selectedSide = 0; // 1 위 진영  2 아래 진영
 let html = '';
 
 for (let i = 0; i < 3; i++) {
@@ -14,10 +15,9 @@ for (let i = 0; i < 3; i++) {
 }
 
 function onClick(event){
-    console.log(event.target.parentNode);
     event.target.parentNode.classList.toggle('active');
-
-
-
 }
 
+function upDown(event) {
+    selectedSide = event.target.id;
+}
