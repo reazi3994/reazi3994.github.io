@@ -1,0 +1,39 @@
+.city39 {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: solid 2px yellow;
+    background-color: darkgrey;
+}
+.city45 {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: solid 2px purple;
+    background-color: darkgrey;
+}
+
+.list-container {
+    display: inline-flex;
+    background-color: aquamarine;
+    vertical-align: top;
+}
+
+.list-container > ul {
+    list-style-type: decimal;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.list-container > ul > li {
+    padding: 2px;
+    margin: 1px;
+}
+
+.list-container > ul > li > input {
+    width: 70px;
+}
+
+.active {
+    background-color: purple;
+}
